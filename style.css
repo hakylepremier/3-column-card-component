@@ -1,0 +1,128 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+/* font-family: 'Big Shoulders Display', cursive; */
+/* font-family: 'Lexend Deca', sans-serif; */
+
+:root {
+	--bright-orange: #e38826;
+	--dark-cyan: #006970;
+	--very-dark-cyan: #004241;
+	--transparent-white: rgba(255, 255, 255, 0.75);
+	--very-light-gray: #f2f2f2;
+}
+
+body {
+	font-size: 15px;
+	font-family: "Lexend Deca", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: red;
+	/* display: inline-block; */
+}
+
+.main {
+	width: 100%;
+	height: 100vh;
+	height: 100dvh;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.card {
+	/* display: inline-block; */
+	box-sizing: border-box;
+	height: 500px;
+	padding: 48px;
+	background-color: var(--dark-cyan);
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: space-between;
+}
+
+.card:first-child {
+	background-color: var(--bright-orange);
+	border-radius: 10px 0 0 10px;
+}
+
+.card:first-child > .btn {
+	color: var(--bright-orange);
+}
+
+.card:first-child > .btn:hover {
+	color: var(--very-light-gray);
+}
+
+.card:last-child {
+	background-color: var(--very-dark-cyan);
+	border-radius: 0 10px 10px 0;
+}
+
+.card:last-child > .btn {
+	color: var(--very-dark-cyan);
+}
+
+.card:last-child > .btn:hover {
+	color: var(--very-light-gray);
+}
+
+.title {
+	margin: 0;
+	padding: 0;
+	color: var(--very-light-gray);
+	font-family: "Big Shoulders Display", cursive;
+	font-size: 36px;
+	text-transform: uppercase;
+	padding: 32px 0;
+}
+
+.paragraph {
+	margin: 0;
+	padding: 0;
+	max-width: 214px;
+	line-height: 1.5rem;
+	color: var(--transparent-white);
+}
+
+.btn {
+	padding: 16px 32px;
+	background-color: var(--very-light-gray);
+	border-radius: 32px;
+	color: var(--dark-cyan);
+	transition: all 0.1s;
+	/* color: transparent; */
+}
+
+.btn:hover {
+	padding: 14px 30px;
+	background-color: transparent;
+	border: 2px solid var(--very-light-gray);
+	color: var(--very-light-gray);
+}
+
+@media screen and (max-width: 900px) {
+	.main {
+		height: auto;
+		flex-direction: column;
+	}
+
+	.card {
+		height: 440px;
+	}
+
+	.card:first-child {
+		border-radius: 10px 10px 0 0;
+	}
+
+	.card:last-child {
+		border-radius: 0 0 10px 10px;
+	}
+
+	.paragraph {
+		max-width: 234px;
+	}
+}
