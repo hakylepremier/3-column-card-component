@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github repo for solution](https://github.com/hakylepremier/)
-- Live Site URL: [Live site link](https://hakylepremier.github.io/)
+- Solution URL: [Github repo for solution](https://github.com/hakylepremier/3-column-card-component)
+- Live Site URL: [Live site link](https://hakylepremier.github.io/3-column-card-component)
 
 ## My process
 
